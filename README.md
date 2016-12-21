@@ -2,7 +2,7 @@
 
 This is my personal website made with Materialize 
 
-** Sources ** 
+## Sources 
 http://materializecss.com
 
 Images can be found at: 
