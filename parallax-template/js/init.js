@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+
+
 (function($){
   $(function(){
 
