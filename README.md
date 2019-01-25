@@ -1,6 +1,6 @@
 # michael-a-wong.github.io
 
-This is my personal website made with Materialize 
+This is my personal website made with Materialize. View it at https://michael-a-wong.github.io/
 
 ## Sources 
 http://materializecss.com
