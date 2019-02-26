@@ -1,83 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Michael A. Wong</title>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Michael A. Wong</title>
+  <link rel="icon" href="./img/MWlogo.png">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./parallax-template/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./parallax-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link href="./parallax-template/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./parallax-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135268074-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135268074-1');
+  </script>
+
 </head>
+
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Michael Wong</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Connect</a></li>
-      </ul>
+  <div class="navbar-fixed ">
+    <nav class="white scrollspy" role="navigation">
+      <div class="nav-wrapper container navbar-default navbar-static-top">
+        <a id="logo-container" href="#title-picture" class="brand-logo">Michael A. Wong</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <li><a href="https://michael-a-wong.blogspot.com/">Blog</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Connect</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="material-icons black-text">menu</i></a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <li><a href="https://michael-a-wong.blogspot.com/">Blog</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse "><i
+            class="material-icons black-text">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
-  <div id="title-picture" class="parallax-container">
+  <div id="title-picture" class="parallax-container scrollspy">
     <div class="section no-pad-bot">
       <div class="container">
+
+        <!-- partical.js needs background -->
+        <canvas class="background"></canvas>
+
         <br><br>
         <h1 class="header center white-text text-lighten-2">Michael A. Wong</h1>
         <div class="row center">
-          <h5 class="header col s12 light">I am a computer science major at UC Davis</h5>
-        </div>
-        <!--
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        -->
-        <br><br>
 
+          <!-- typed.js needs element-->
+          <h2 class="element"></h2>
+
+        </div>
+
+        <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="./img/pismo.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
-   <div id="about-me" class="container scrollspy">
+  <!-- About Me-->
+
+  <div id="about-me" class="container scrollspy">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send black-text"></i></h3>
           <h4>About Me</h4>
-          
+
           <p class="left-align light">
             <script type="text/javascript">
               var myDate = new Date();
               if (myDate.getHours() < 12) /* Time: 12:00am to 11:59am */ {
-                document.write("Good morning! ");} 
-                  else if (myDate.getHours() >= 12 && myDate.getHours() < 17) /* Time: 12:00pm to 5:59pm */ {
-                    document.write("Good afternoon! ");} 
-                  else if (myDate.getHours() >= 17 && myDate.getHours() < 24) /* Time 6:00pm to 11:59pm */ {
-                    document.write("Good evening! ");} 
-                  else /* Not sure what the time is */ {
-                    document.write("Greetings!, ");}
+                document.write("Good morning! ");
+              }
+              else if (myDate.getHours() >= 12 && myDate.getHours() < 17) /* Time: 12:00pm to 5:59pm */ {
+                document.write("Good afternoon! ");
+              }
+              else if (myDate.getHours() >= 17 && myDate.getHours() < 24) /* Time 6:00pm to 11:59pm */ {
+                document.write("Good evening! ");
+              }
+              else /* Not sure what the time is */ {
+                document.write("Greetings!, ");
+              }
             </script>
-          I am currently a thrid year at the University of California, Davis studying Computer Science. </p>
+            <!-- <h5 class="header col s12 light">Recent graduate from UC Davis with a degree in Computer Science. Seeking a
+            job in software engineering in the Bay Area.</h5> -->
+
+            I’m looking for a passionate engineering team who enjoy solving complex technical challenges. I would like
+            to contribute to challenging technical problems and learn creative problem-solving skills. The company must
+            be organized, works efficiently, and provides career growth for people who work hard.
+          </p>
+        </div>
+
+      </div>
+
+      <br>
+      <div class="row">
+        <div class=" col s1 m1 l1 push-s1 push-m1 push-l1">
+          <h6>Education</h6>
+        </div>
+        <div class="col push-s5 push-m5 push-l5">
+          <strong>University of California, Davis</strong>
+          <br>
+          B.S. Computer Science, GPA 3.3 / 4.0
         </div>
       </div>
+
 
     </div>
   </div>
 
 
-
+  <!-- Middle Picture -->
 
   <div id="middle-picture" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -87,66 +133,118 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./img/bike_wheel.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="./img/pismo.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
+  <!-- Projects -->
+
+  <!-- materialize has a grid of 12 boxes -->
+  <!-- s "small screen" m "medium" l "large" -->
+  <!-- therefore, s12 means 12 boxes for small screens -->
 
   <div id="projects" class="container scrollspy">
     <div class="section">
 
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Projects</h4>
-        </div>
+      <div class="col s12 center">
+        <!-- <h3><i class="mdi-content-send brown-text"></i></h3> -->
+        <h4>Projects</h4>
+      </div>
+
+      <br><br>
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m6 l4">
-          <div class="card grey lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/KickstarterVisualization.png">
+              <span class="card-title black-text">Kickstarted Visualization</span>
+            </div>
+            <div class="card-content">
+              <p>In this project, I analyzed four years of data from kickstarted to evaluate what features made a good
+                kick starter project.
+                I coded a Radar chart and a Coordinate plot graph using D3 to visualize which KS project was successful.
+              </p>
             </div>
             <div class="card-action">
-              <a href="http://htmlpreview.github.io/?https://github.com/michael-a-wong/myquiz/blob/master/quizWong.html">My first website</a>
-              <a href="#">This is a link</a>
+              <a class="black-text"
+                href="http://htmlpreview.github.io/?https://github.com/michael-a-wong/michael-a-wong.github.io/blob/master/dataVisualization/index.html">View
+                Visualization</a>
+              <a class="black-text"
+                href="https://github.com/michael-a-wong/michael-a-wong.github.io/blob/master/dataVisualization/index.html">View
+                Code</a>
             </div>
           </div>
         </div>
-      
-        <div class="col s12 m6 l4">
-          <div class="card grey lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/PiplinedCPU.png">
+              <span class="card-title black-text">Piplined CPU</span>
+            </div>
+            <div class="card-content">
+              <p>In this project, I designed a pipelined CPU that was able to fetch instructions from ROM in Logisim.
+                The CPU processed MIPS instructions (eg. Add, Beq, Jal, and La) and stored data in a RAM.</p>
             </div>
             <div class="card-action">
-              <a href="./michael-a-wong.github.io/weatherApp/weatherWong.html">Weather</a>
-              <a href="#">This is a link</a>
+              <a class="black-text"
+                href="https://github.com/michael-a-wong/homeworkECS154b/blob/master/lab3/l3revise.circ">View Code</a>
             </div>
           </div>
         </div>
-      
-        <div class="col s12 m6 l4">
-          <div class="card grey lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="http://htmlpreview.github.io/?https://github.com/michael-a-wong/michael-a-wong.github.io/blob/master/dataVisualization/index.html">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
+
       </div>
 
-    </div>
-  </div> 
+      <br><br>
 
+      <div class="row">
+        <div class="col s12 m6 l6 ">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/">
+              <span class="card-title black-text">Breakout Game</span>
+            </div>
+            <div class="card-content">
+              <p>
+                This is a simple game for me to learn about animaiton in javascript
+              </p>
+            </div>
+            <div class="card-action ">
+              <a class="black-text" href="https://high-transit-232317.appspot.com/game">Play</a>
+              <a class="black-text"
+                href="https://github.com/michael-a-wong/michael-a-wong.github.io/blob/master/appEngine/public/javascripts/game.js">View
+                Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/">
+              <span class="card-title black-text">Weather Application</span>
+            </div>
+            <div class="card-content">
+              <p>
+                This is a simple weather app that
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="black-text" href="./michael-a-wong.github.io/weatherApp/weatherWong.html">Weather</a>
+              <a class="black-text" href="https://github.com/michael-a-wong/myWeatherApp">View Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Bottom Picuture -->
 
   <div id="bottom-picture" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -159,54 +257,58 @@
     <div class="parallax"><img src="./img/davis_circle.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer id="contacts" class="page-footer white scrollspy">
+  <!-- Footer -->
+
+  <footer id="connect" class="page-footer white scrollspy">
     <div class="container">
       <div class="row">
-      <!--
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <div class="col l6 s12 ">
 
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      -->
-        <div class="col l3 s12  ">
           <h5 class="black-text">Connect</h5>
-          <style> 
-          ul {
-            display: inline;
-          }
-          </style>
-          <ul style="display:inline" >
-            <li><a class="black-text" href="https://www.linkedin.com/in/mwong2960">LinkedIn</a></li>
-            <li><a class="black-text" href="https://github.com/michael-a-wong">Github</a></li>
-            <li><a class="black-text" href="mailto:mawwong@ucdavis.edu">Email</a></li>
-            <li><a class="black-text" href="./img/Resume.pdf">Resume</a></li>
+          <ul>
+            <li><a class="black-text s1 l1" href="https://www.linkedin.com/in/mwong2960">LinkedIn</a></li>
+            <li><a class="black-text s1 l1" href="https://github.com/michael-a-wong">Github</a></li>
+            <li><a class="black-text s1 l1" href="mailto:mawwong@ucdavis.edu">Email</a></li>
+            <li><a class="black-text s1 l1" href="./img/ResumeJan2019.doc">Resume</a></li>
           </ul>
+
+        </div>
+        <div class="col l4 offset-l2 s12 ">
+          <h5 class="black-text">About</h5>
+          <!-- <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+          <!-- <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p> -->
+
+          <div class="black-text">
+            Made by Michael Wong ©
+            <script type="text/javascript">
+              var dt = new Date();
+              document.write(" " + dt.getFullYear()); 
+            </script>
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <!-- <div class="footer-copyright">
       <div class="container black-text">
-      Made by Michael A. Wong
+        Made by Michael Wong © 
+        <script type = "text/javascript">
+          var dt = new Date();
+          document.write(" " + dt.getFullYear() ); 
+       </script> 
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
-    </div>
+    </div> -->
   </footer>
 
-
   <!--  Scripts-->
+
+  <script src="./node_modules/typed.js/lib/typed.js"></script>
+  <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="./parallax-template/js/materialize.js"></script>
   <script src="./parallax-template/js/init.js"></script>
 
-  </body>
+</body>
+
 </html>

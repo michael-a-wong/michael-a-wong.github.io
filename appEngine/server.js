@@ -13,9 +13,9 @@ app.get('/submit', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/views/form.html'));
 });
 
-// app.get('/game', (req, res) => {
-//   res.sendFile(path.join(__dirname, '/public/views/index.html'));
-// });
+app.get('/game', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/views/index.html'));
+});
 
 app.get('/', (req, res) => {
   res.send('Hello from App Engine!');
