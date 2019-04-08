@@ -24,8 +24,8 @@ window.onload = function () {
 
 
 var options = {
-  strings: ["Hello, World", "I love to code!"],
-  typeSpeed: 40
+  strings: ["Hello, World", "I am a ...", "Problem Solver", "Programmer", "I am passionate about code!"],
+  typeSpeed: 50
 }
 
 var typed = new Typed(".element", options);
